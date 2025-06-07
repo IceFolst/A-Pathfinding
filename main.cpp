@@ -156,7 +156,7 @@ void AnimatePath(const vector<vector<Node>>& grid, const vector<pair<int, int>>&
 
 int main()
 {
-    int width = 20, height = 40;
+    int width = 40, height = 20;
 
     char obstacleChoice;
     float density = 0.2f;
@@ -204,14 +204,14 @@ int main()
     gy--;
 
 
-    if (sx < 0 || sx >= width || sy < 0 || sy >= height ||
-        gx < 0 || gx >= width || gy < 0 || gy >= height) {
+    if (sx < 0 || sx >= height || sy < 0 || sy >= width ||
+        gx < 0 || gx >= height || gy < 0 || gy >= width) {
         cerr << "Coordinates out of bounds!\n";
         return 1;
         }
 
-    Node* start = &grid[sx][sy];
-    Node* goal = &grid[gx][gy];
+    Node* start = &grid[sy][sx];
+    Node* goal = &grid[gy][gx];
 
     if (!start->Walkable || !goal->Walkable) {
         cerr << "Start or goal is not walkable.\n";
