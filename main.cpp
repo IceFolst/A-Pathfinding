@@ -126,8 +126,6 @@ vector<pair<int,int>> AStar(vector<vector<Node>>& grid, Node* start, Node* goal)
 }
 
 
-// TODO if you are on Windows, it is system("cls");
-
 void AnimatePath(const vector<vector<Node>>& grid, const vector<pair<int, int>>& path) {
     int height = grid[0].size();
 
@@ -151,7 +149,7 @@ void AnimatePath(const vector<vector<Node>>& grid, const vector<pair<int, int>>&
             cout << "\n";
         }
 
-        this_thread::sleep_for(std::chrono::milliseconds(100));
+        this_thread::sleep_for(chrono::milliseconds(100));
     }
 }
 

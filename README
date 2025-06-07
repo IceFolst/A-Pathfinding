@@ -1,8 +1,6 @@
 Bacquet Alexandre
 
-In this it you will find 
+In this git you will find 
 
 A* pathfinding
 
-The code run correctly on linux, but if you are on Windows, you will need
-to change a code of line in the function AnimatePath, the comments in the code will help you.
