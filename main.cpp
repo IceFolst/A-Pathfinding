@@ -192,9 +192,14 @@ int main()
 
     int sx, sy, gx, gy;
 
-    cout << "Enter start coordinates (x y): ";
+    cout << "Rows value between 1 and 20\n";
+    cout << "Columns value between 1 and 40\n";
+    cout << "\n";
+
+
+    cout << "Enter start coordinates (rows, columns): ";
     cin >> sx >> sy;
-    cout << "Enter goal coordinates (x y): ";
+    cout << "Enter goal coordinates (rows, columns): ";
     cin >> gx >> gy;
 
     // to make the cordinate bewtween 1 and 20 or 1 and 40 for the users at 0 - 19 and 0 - 39

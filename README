@@ -4,3 +4,13 @@ In this git you will find
 
 A* pathfinding
 
+You will need to use the makefile to produce the exec file using make in the shell.
+
+When you run it, you will have the obtion to have ostaclees or not.
+If yes then you can change the density of block on the grid.
+
+The you will need to give the start coordinate and the end coordinate.
+If the coordinate are out of bound or are on unwalkable block, it will tell you so.
+If the path between the coordinate doesn't exist because there is no way due to the block blocking the way, it will tell you.
+
+But if the path exits, then will print the print with an emoji ascii moving on the path, the path is represented by satr emoji ascii.
